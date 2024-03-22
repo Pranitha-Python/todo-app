@@ -1,0 +1,8 @@
+add a new player
+play soccer
+fix the radio
+clean
+run
+exit the gate
+clean the code
+parameter

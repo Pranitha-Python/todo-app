@@ -1,0 +1,2 @@
+T = input("Enter a title:")
+length = len(T)
