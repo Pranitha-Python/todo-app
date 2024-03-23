@@ -1,13 +1,18 @@
-from parsers import parse
-import random
+import PySimpleGUI as sg
 
-# Ask the user to enter a lower and an upper bound divided by a comma
-user_input = input("Enter a lower bound and an uppwer bound divided a comma (e.g., 2,10)")
+label = sg.Text("What are dolphins?")
+option1 = sg.Radio("Amphibians", group_id="question1")
+option2 = sg.Radio("Fish", group_id="question1")
+option3 = sg.Radio("Mammals", group_id="question1")
+option4 = sg.Radio("Birds", group_id="question1")
 
-# Parse the user string by calling the parse function
-parsed = parse(user_input)
+window = sg.Window("File Compressor",
+                   layout=[[label],
+                           [option1],
+                            [option2],
+                            [option3],
+                            [option4],
+                           ])
 
-# Pick a random int between the two numbers
-rand = random.randint(parsed['lower_bound'], parsed['upper_bound'])
-
-print(rand)
+window.read()
+window.close()

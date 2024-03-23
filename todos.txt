@@ -6,3 +6,5 @@ run
 exit the gate
 clean the code
 parameter
+clean
+master pytohn
